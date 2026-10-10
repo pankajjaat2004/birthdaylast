@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Happy Birthday Muskan</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="screen active" data-screen="gift" data-stage="gift">
+      <div class="glow"></div>
+      <div class="hearts" data-hearts></div>
+      <button type="button" id="open-gift" class="gift-button" aria-label="Open the gift">
+        <svg viewBox="0 0 240 200" class="gift" width="256" height="213">
+          <defs>
+            <linearGradient id="giftBody" x1="0" x2="1">
+              <stop offset="0" stop-color="#f472b6" />
+              <stop offset="0.5" stop-color="#f9a8d4" />
+              <stop offset="1" stop-color="#ec4899" />
+            </linearGradient>
+            <linearGradient id="giftLid" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0" stop-color="#fbcfe8" />
+              <stop offset="1" stop-color="#f472b6" />
+            </linearGradient>
+            <linearGradient id="giftRibbon" x1="0" x2="1">
+              <stop offset="0" stop-color="#fde68a" />
+              <stop offset="0.5" stop-color="#fef9c3" />
+              <stop offset="1" stop-color="#facc15" />
+            </linearGradient>
+          </defs>
+          <ellipse cx="120" cy="190" rx="92" ry="9" fill="#be185d" opacity="0.18" />
+          <rect x="30" y="84" width="180" height="108" rx="10" fill="url(#giftBody)" />
+          <rect x="112" y="84" width="16" height="108" fill="url(#giftRibbon)" />
+          <g class="lid">
+            <rect x="20" y="54" width="200" height="34" rx="8" fill="url(#giftLid)" />
+            <rect x="112" y="54" width="16" height="34" fill="url(#giftRibbon)" />
+            <path d="M120 56 C96 18 62 26 74 50 C82 66 110 60 120 56Z" fill="url(#giftRibbon)" stroke="#eab308" />
+            <path d="M120 56 C144 18 178 26 166 50 C158 66 130 60 120 56Z" fill="url(#giftRibbon)" stroke="#eab308" />
+            <circle cx="120" cy="54" r="9" fill="#facc15" stroke="#eab308" />
+          </g>
+        </svg>
+      </button>
+      <div class="stack">
+        <h1 class="title">A little surprise for you, baby</h1>
+        <p class="muted">Tap the gift to open it.</p>
+      </div>
+      <button type="button" id="open-gift-btn" class="pill">Open my gift</button>
+    </section>
+
+    <section class="screen" data-screen="cake">
+      <div class="glow"></div>
+      <div class="hearts" data-hearts></div>
+      <div class="stack">
+        <h1 class="title" id="cake-title">Happy Birthday, Muskan!</h1>
+        <p class="muted" id="cake-text">Make a wish and blow out the candles.</p>
+      </div>
+      <svg viewBox="0 0 320 240" class="cake" width="300" height="225" role="img" aria-label="Birthday cake with candles">
+        <defs>
+          <linearGradient id="cakeTop" x1="0" x2="1">
+            <stop offset="0" stop-color="#f9c2dc" />
+            <stop offset="0.5" stop-color="#fde2ee" />
+            <stop offset="1" stop-color="#f5a8ca" />
+          </linearGradient>
+          <linearGradient id="cakeBottom" x1="0" x2="1">
+            <stop offset="0" stop-color="#ec7fae" />
+            <stop offset="0.5" stop-color="#fbbfd9" />
+            <stop offset="1" stop-color="#e86aa0" />
+          </linearGradient>
+          <radialGradient id="cakeFlame" cx="50%" cy="70%" r="60%">
+            <stop offset="0" stop-color="#fffbeb" />
+            <stop offset="0.45" stop-color="#fde047" />
+            <stop offset="1" stop-color="#fb923c" />
+          </radialGradient>
+        </defs>
+        <ellipse cx="160" cy="222" rx="150" ry="13" fill="#e9a6c0" />
+        <rect x="30" y="140" width="260" height="80" rx="18" fill="url(#cakeBottom)" />
+        <rect x="70" y="80" width="180" height="62" rx="14" fill="url(#cakeTop)" />
+        <rect x="70" y="80" width="180" height="62" rx="14" fill="none" />
+        <g fill="#fff7fb">
+          <rect x="30" y="140" width="260" height="8" rx="4" />
+          <rect x="70" y="80" width="180" height="8" rx="4" />
+        </g>
+        <g id="candles">
+          <g>
+            <line x1="100" y1="34" x2="100" y2="42" stroke="#57534e" stroke-width="1.5" />
+            <rect x="95" y="42" width="10" height="40" rx="2.5" fill="#fde68a" />
+            <ellipse class="flame" cx="100" cy="30" rx="5" ry="9" fill="url(#cakeFlame)" />
+          </g>
+          <g>
+            <line x1="130" y1="34" x2="130" y2="42" stroke="#57534e" stroke-width="1.5" />
+            <rect x="125" y="42" width="10" height="40" rx="2.5" fill="#fbcfe8" />
+            <ellipse class="flame" cx="130" cy="30" rx="5" ry="9" fill="url(#cakeFlame)" />
+          </g>
+          <g>
+            <line x1="160" y1="34" x2="160" y2="42" stroke="#57534e" stroke-width="1.5" />
+            <rect x="155" y="42" width="10" height="40" rx="2.5" fill="#fde68a" />
+            <ellipse class="flame" cx="160" cy="30" rx="5" ry="9" fill="url(#cakeFlame)" />
+          </g>
+          <g>
+            <line x1="190" y1="34" x2="190" y2="42" stroke="#57534e" stroke-width="1.5" />
+            <rect x="185" y="42" width="10" height="40" rx="2.5" fill="#fbcfe8" />
+            <ellipse class="flame" cx="190" cy="30" rx="5" ry="9" fill="url(#cakeFlame)" />
+          </g>
+          <g>
+            <line x1="220" y1="34" x2="220" y2="42" stroke="#57534e" stroke-width="1.5" />
+            <rect x="215" y="42" width="10" height="40" rx="2.5" fill="#fde68a" />
+            <ellipse class="flame" cx="220" cy="30" rx="5" ry="9" fill="url(#cakeFlame)" />
+          </g>
+        </g>
+      </svg>
+      <button type="button" id="blow" class="pill">Blow</button>
+      <div class="poppers" id="poppers" hidden>
+        <div class="popper left"><img src="https://cdn.builder.io/api/v1/image/assets%2Fa298068d661e43fdb45effc9440c6145%2Fa641b637c5204fb4984eee97df04fc06?format=webp&width=800&height=1200" alt="" /></div>
+        <div class="popper right"><img src="https://cdn.builder.io/api/v1/image/assets%2Fa298068d661e43fdb45effc9440c6145%2Fa641b637c5204fb4984eee97df04fc06?format=webp&width=800&height=1200" alt="" /></div>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="bokeh">
+      <div class="orb">
+        <div class="orb-glow"></div>
+        <img src="https://cdn.builder.io/api/v1/image/assets%2Fa298068d661e43fdb45effc9440c6145%2F9cbd78e3c4824b7a96570ea8b62d3b29?format=webp&width=800&height=1200" alt="" />
+      </div>
+      <div class="stack serif narrow">
+        <p class="big rose">a small present for you baby</p>
+        <p class="medium rose-dark">i just wanted to see you keep smiling like this always</p>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="password">
+      <div class="split">
+        <div class="center">
+          <div class="envelope-box">
+            <img src="https://cdn.builder.io/api/v1/image/assets%2Fa298068d661e43fdb45effc9440c6145%2F1f3787ad315c4c8a97a764ae36759970?format=webp&width=800&height=1200" alt="Heart-shaped gift box" id="pw-gift" />
+            <div class="surprise" id="surprise" hidden>
+              <img src="https://cdn.builder.io/api/v1/image/assets%2Fa298068d661e43fdb45effc9440c6145%2F72b8dde2a50c43d0bd3b6b9967a81063?format=webp&width=800&height=1200" alt="A surprise for you" />
+            </div>
+          </div>
+        </div>
+        <div class="center column">
+          <div class="stack">
+            <h1 class="title">Enter the secret code</h1>
+            <p class="muted">Only the right code opens this gift.</p>
+          </div>
+          <div class="dots" id="dots"></div>
+          <div class="status" id="status"></div>
+          <div class="keypad" id="keypad"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen letter" data-screen="letter">
+      <div class="hearts" data-hearts></div>
+      <div id="letter-sealed" class="letter-sealed">
+        <div class="envelope-wrap">
+          <img src="https://cdn.builder.io/api/v1/image/assets%2Fa298068d661e43fdb45effc9440c6145%2Fd0a3ae9690524f5286f652a833269209?format=webp&width=800&height=1200" alt="A sealed envelope with a heart" />
+          <button type="button" id="open-letter" class="seal" aria-label="Open the letter"></button>
+        </div>
+        <p class="muted">Tap the heart to open</p>
+      </div>
+      <div id="letter-open" class="letter-card" hidden>
+        <div id="letter-text" class="letter-text"></div>
+        <button type="button" class="pill" data-next="memories">Next</button>
+      </div>
+    </section>
+
+    <section class="screen memories" data-screen="memories">
+      <div class="hearts" data-hearts></div>
+      <header class="stack">
+        <h1 class="title">Our Memories</h1>
+        <p class="rose-light">Every moment with you is a treasure.</p>
+      </header>
+      <div class="grid" id="grid"></div>
+      <div class="center-row">
+        <button type="button" class="pill" id="memories-next">Next</button>
+      </div>
+      <div class="overlay" id="overlay" hidden>
+        <svg viewBox="0 0 24 24" class="heart-big" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.5-9C1 8.5 3.2 5 6.7 5c2 0 3.3 1.1 4.3 2.5C12 6.1 13.3 5 15.3 5 18.8 5 21 8.5 21.5 12c-2 4.4-9.5 9-9.5 9z" /></svg>
+        <p class="medium">Something special is coming...</p>
+        <p class="medium">Hold on baby</p>
+        <p class="overlay-note">still a surprise listen carefully and put on the headphone</p>
+      </div>
+    </section>
+
+    <section class="screen voice" data-screen="voice">
+      <div class="hearts" data-hearts></div>
+      <h1 class="title">Happy Birthday, my love</h1>
+      <div class="stack center">
+        <div class="frame" id="voice-frame"><img id="voice-img" alt="" /></div>
+        <div class="stack" id="voice-caption">
+          <h2 class="subtitle" id="voice-title"></h2>
+          <p class="muted" id="voice-text"></p>
+        </div>
+      </div>
+      <div class="dots-row" id="voice-dots"></div>
+      <p class="closing">
+        I am so blessed that you came into my life. Thank you for every
+        memory, and for being the most beautiful part of mine.
+      </p>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
